@@ -3,7 +3,7 @@ agent any
 stages {
 stage('clone') {
 steps {
-git branch:'main',url:'
+git branch:'main',url:'https://github.com/siriharitha/Calculator1.git';
 }
 }
   stage('compile') {
@@ -16,5 +16,12 @@ git branch:'main',url:'
       sh 'java Calculator 25 5'
     }
   }
+  stage('test') {
+    steps {
+      sh 'java Calculator 30 -5'
 }
 }
+  stage('Deploy') {
+    steps {
+      echo 'Deployment completed'
+    }
