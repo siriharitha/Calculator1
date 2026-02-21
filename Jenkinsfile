@@ -26,3 +26,5 @@ git branch:'main',url:'https://github.com/siriharitha/Calculator1.git';
       echo 'Deployment completed'
     }
   }
+}
+}
